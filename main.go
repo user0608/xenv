@@ -28,7 +28,10 @@ func main() {
 	var filename string
 	if len(os.Args) == 1 {
 		filename = ".env"
+	} else {
+		filename = os.Args[1]
 	}
+
 	f, err := os.Open(filename)
 	if err != nil {
 		log.Println(err.Error())
