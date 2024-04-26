@@ -1,4 +1,4 @@
-module xenv
+module github.com/user0608/xenv
 
 go 1.21.4
 
